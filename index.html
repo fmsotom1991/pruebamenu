@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Menu vertical responsivo</title>
+</head>
+<body>
+    <nav>
+        <div class="mobile">
+           <div class="header">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="more">
+                    <button id="bMore"><span class="material-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                        </span></button>
+                </div>
+            </div>
+            <div id="links" class="links collapsed">
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Search</a>
+                <a href="#">Sing Up</a>
+                <a href="#">Login</a>
+
+
+            </div>
+        </div>
+        <div class="desktop">
+<div class="log">
+    Logo
+</div>
+<div class="primary">
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="secundary full">
+    <a href="#">Search</a>
+    <a href="#">Sing Up</a>
+    <a href="#">Login</a>
+</div>
+
+<div class="secundary mini">
+    <a href="#" class="more">More</a>
+    <div class="submenu">
+    <a href="#">Search</a>
+    <a href="#">Sing Up</a>
+    <a href="#">Login</a>
+    </div>
+</div>
+
+        </div>
+    </nav>
+    <script>
+        const bMore=document.querySelector('#bMore');
+        const links=document.querySelector('#links')
+        bMore.addEventListener('click',(e)=>
+        {
+links.classList.toggle('collapsed');
+    })
+
+    </script>
+</body>
+
+</html>
